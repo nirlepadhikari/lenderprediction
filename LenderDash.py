@@ -2,6 +2,7 @@ import streamlit as st
 
 
 st.sidebar.slider("Client's Age",18,80)
+st.sidebar.selectbox("Application Type",["Sole","Sws","Joint"])
 st.sidebar.number_input("Comprehensive Score")
 st.sidebar.number_input("Veda Score 1.1")
 st.sidebar.radio("Current Payday Loans?",["Yes","No"])
