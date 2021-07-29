@@ -1,5 +1,14 @@
 import streamlit as st
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            .viewerBadge_link__1S137 {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 st.sidebar.slider("Client's Age",18,80)
 st.sidebar.selectbox("Application Type",["Sole","Sws","Joint"])
